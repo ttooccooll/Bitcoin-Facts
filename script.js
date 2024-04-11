@@ -155,4 +155,5 @@ function showOverlay() {
 
 function openBitcoinFacts() {
   window.open("https://dashboard.clarkmoody.com/", "_blank");
+  playMP4();
 }
