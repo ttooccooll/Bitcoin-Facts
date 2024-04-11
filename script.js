@@ -97,9 +97,6 @@ function moreCivicsFacts() {
 
 document.getElementById('reloadb').addEventListener('click', moreCivicsFacts);
 
-
-
-
 async function fetchChuckNorrisSportsJoke() {
     const response = await fetch('https://api.chucknorris.io/jokes/random?category=sport');
     const data = await response.json();
@@ -154,4 +151,8 @@ function showOverlay() {
             overlay.remove();
         }, 500);
     }, 500);
+}
+
+function openBitcoinFacts() {
+  window.open("https://dashboard.clarkmoody.com/", "_blank");
 }
