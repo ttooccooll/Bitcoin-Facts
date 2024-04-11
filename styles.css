@@ -1,0 +1,158 @@
+body {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: darkorange;
+    background: purple;
+    z-index: -2;
+    overflow: visible;
+}
+
+h1 {
+    margin: 0;
+}
+
+.yep1 {
+    width: 75%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgb(46, 18, 50);
+    border: #993399 double 10px;
+    margin: 1%;
+    padding: 1%;
+}
+
+.yep {
+    width: 75%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 10em;
+    background: rgb(46, 18, 50);
+    border: #993399 double 10px;
+    margin: 1%;
+    padding: 0% 0% 0% 0%;
+}
+
+.button-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background: rgb(46, 18, 50);
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2.5% 2% .5% 2%;
+    z-index: -2;
+    border: #993399 double 10px;
+}
+
+button.purple {
+    position: relative;
+    text-shadow: darkgrey 1px 1px 1px, darkgrey -1px -1px 1px,
+      darkgrey -1px 1px 1px, darkgrey 1px -1px 1px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 3.6rem;
+    height: 3.6rem;
+    font-size: .8rem;
+    font-weight: bold;
+    background-color: #800080; /* Purple */
+    background-image: radial-gradient(
+      1.2rem 1.2rem,
+      circle closest-side,
+      #800080 0.5rem, /* Purple */
+      #993399 1rem, /* Adjusted shade */
+      #993399 1.2rem, /* Adjusted shade */
+      #cc66cc 1.8rem /* Adjusted shade */
+    );
+    background-position: center center;
+    background-repeat: no-repeat;
+    box-shadow: rgba(0, 0, 0, 0.8) 0 0 0.4rem 0.2rem,
+      rgba(255, 255, 255, 0.7) 0 0.1rem 0.1rem inset, #800080 0 0.3rem 0.4rem inset, /* Purple */
+      rgba(0, 0, 0, 0.3) 0 0.8rem 0.4rem inset,
+      rgba(255, 255, 255, 0.5) 0 -2px 3px inset, #800080 0 -7px 20px inset; /* Purple */
+    border-radius: 500px;
+    border: #800080 1px solid; /* Purple */
+    display: block;
+  }
+  
+  button.purple:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    padding: 0.3rem;
+    background: #660066; /* Adjusted shade */
+    width: 4.4rem;
+    height: 4.4rem;
+    border-radius: 50%;
+    box-shadow: rgba(102, 0, 102, 0.8) 0 4px 5px inset, /* Adjusted shade */
+      rgba(255, 255, 255, 0.5) 0 12px 5px inset,
+      rgba(51, 0, 51, 0.7) 0 -12px 5px inset, rgba(0, 0, 0, 0.8) 0 4px 8px; /* Adjusted shade */
+  }
+  
+  button.purple:hover {
+    cursor: pointer;
+    font-size: .7rem;
+    background-image: radial-gradient(
+      1.2rem 1.2rem,
+      circle closest-side,
+      #800080 0.5rem, /* Purple */
+      #993399 1.1rem, /* Adjusted shade */
+      #993399 1.2rem, /* Adjusted shade */
+      #cc66cc 1.8rem /* Adjusted shade */
+    );
+    background-position: center center;
+    background-repeat: no-repeat;
+    box-shadow: rgba(0, 0, 0, 0.8) 0 0 0.4rem 0.2rem,
+      rgba(275, 255, 255, 0.7) 0 0.1rem 0.1rem inset, #cc66cc 0 0.3rem 0.4rem inset, /* Adjusted shade */
+      rgba(0, 0, 0, 0.3) 0 0.8rem 0.9rem inset,
+      rgba(255, 255, 275, 0.5) 0 -2px 3px inset, #800080 0 -7px 20px inset; /* Purple */
+  }
+  
+  button.purple:active {
+    cursor: crosshair;
+    font-size: .8rem;
+    background-image: radial-gradient(
+      1.2rem 1.2rem,
+      circle closest-side,
+      black 0.5rem,
+      #993399 1.1rem, /* Adjusted shade */
+      #993399 1.2rem, /* Adjusted shade */
+      #cc66cc 1.8rem /* Adjusted shade */
+    );
+    background-position: center center;
+    background-repeat: no-repeat;
+    box-shadow: rgba(0, 0, 0, 0.8) 0 0 0.4rem 0.2rem,
+      rgba(275, 255, 255, 0.7) 0 0.1rem 0.1rem inset, #330033 0 0.3rem 0.4rem inset, /* Purple */
+      rgba(0, 0, 0, 0.3) 0 0.8rem 0.9rem inset,
+      rgba(255, 255, 275, 0.5) 0 -2px 3px inset, #800080 0 -7px 20px inset; /* Purple */
+  }
+
+
+  .overlay {
+    position: fixed;
+    top: calc(50% - 12.5vh);
+    left: calc(50% - 12.5vw);
+    transform: translate(-50%, -50%);
+    width: 25vw;
+    height: 25vh;
+    background-image: url('acrobat.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0;
+    z-index: 1000;
+    transition: opacity 0.5s;
+    overflow: visible;
+}
