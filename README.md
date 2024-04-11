@@ -1,1 +1,1 @@
-Step Aside Clark. This is a repository of Scientific, Historic, Culinary, and Athletic facts about the Bitcoin network.
+Step Aside Clark. This is a very serious repository of scientific, historic, culinary, and athletic facts about the Bitcoin network.
