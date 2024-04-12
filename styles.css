@@ -156,3 +156,21 @@ button.purple {
     transition: opacity 0.5s;
     overflow: visible;
 }
+
+@media only screen and (max-width: 580px) {
+  .yep {
+    width: 90%;
+    height: auto;
+    width: auto;
+    padding: 2%;
+  }
+  .button-container {
+    padding-top: 3%;
+    height: auto;
+    width: auto;
+    padding: 12px;
+  }
+  button.purple {
+    margin-top: 10px;
+  }
+}
