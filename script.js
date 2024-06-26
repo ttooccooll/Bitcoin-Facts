@@ -35,11 +35,16 @@ async function fetchChuckNorrisJoke() {
 
   document.getElementById('reload').addEventListener('click', moreFacts);
 
-async function fetchChuckNorrisHistoryJoke() {
-    const response = await fetch('https://api.chucknorris.io/jokes/random?category=history');
-    const data = await response.json();
-    return data.value;
-}
+  async function fetchChuckNorrisHistoryJoke() {
+    let joke;
+    do {
+      const response = await fetch('https://api.chucknorris.io/jokes/random?category=history');
+      const data = await response.json();
+      joke = data.value;
+    } while (joke.includes('Bob'));
+  
+    return joke;
+  }
 
 function replaceChuckNorrisHistory(text, replacement) {
   return text.replace(/Chuck( Norris)?/gi, replacement);
