@@ -133,9 +133,8 @@ function showOverlay() {
     const overlay = document.createElement('div');
     overlay.classList.add('overlay');
     
-    // Calculate random position
-    const randomX = Math.random() * (window.innerWidth - 250); // Adjust as needed
-    const randomY = Math.random() * (window.innerHeight - 250); // Adjust as needed
+    const randomX = Math.random() * (window.innerWidth - 250);
+    const randomY = Math.random() * (window.innerHeight - 250);
     overlay.style.left = randomX + 'px';
     overlay.style.top = randomY + 'px';
 
