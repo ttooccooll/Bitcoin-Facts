@@ -153,8 +153,8 @@ function showOverlay() {
         overlay.style.opacity = '0';
         setTimeout(() => {
             overlay.remove();
-        }, 500);
-    }, 500);
+        }, 550);
+    }, 550);
 }
 
 function openBitcoinFacts() {
